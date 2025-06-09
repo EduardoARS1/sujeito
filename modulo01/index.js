@@ -11,4 +11,21 @@ server.get('/videos', (req,res) => {
     
 })
 
+// com template string
+
+server.get('/template', (req,res) => {
+    const nome = req.query.nome;
+
+    return res.json({ curso: `Aprendendo ${nome}`});
+
+})
+
+// com route params
+
+server.get('/power/:id',(req,res) => {
+    const id = req.params.id;
+
+    return res.json({ curso: `Id do curso ${id}`});
+})
+
 server.listen(3000);
