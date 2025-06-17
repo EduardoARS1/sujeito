@@ -28,4 +28,12 @@ server.get('/power/:id',(req,res) => {
     return res.json({ curso: `Id do curso ${id}`});
 })
 
+const cursos = ['Node JS','JavaScript','PHP','TypeScript','React Native'];
+
+server.get('/array/:index',(req,res) => {
+    const { index } = req.params;
+
+    return res.json({curso: cursos[index]});
+})
+
 server.listen(3000);
