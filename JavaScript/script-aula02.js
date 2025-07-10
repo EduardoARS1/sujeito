@@ -51,3 +51,5 @@ function aluno(nome, curso){
 }
 
 //fim da aulta com continuação
+
+//verificando se o git atualiza
