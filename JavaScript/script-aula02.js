@@ -30,3 +30,22 @@ function sair(){
     alert('Voce realizou o logout!'); //exibe a janela com o texto
     area.innerHTML = 'Ate mais!...'; //altera o h2 para o texto
 }
+
+function mediaAluno(nota1, nota2){
+
+    var media = (nota1 + nota2) / 2;
+
+    if(media >= 7){
+        console.log("O Aluno foi APROVADO com a media: " + media);
+    }else if(media < 7){
+        console.log("O Aluno foi REPROVADO com a media: " + media);
+    }
+
+};
+
+function aluno(nome, curso){
+
+    var mensagem = 'Seja bem vindo ' + nome + ' ao curso de ' + curso + '!'
+    
+    console.log(mensagem);
+}
